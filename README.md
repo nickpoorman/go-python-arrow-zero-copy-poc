@@ -2,6 +2,8 @@
 
 This is a simple POC to demonstrate the ability to allocate data in Python and materialize it Go all within the same process without copying any of the data between the language boundaries using Apache Arrow.
 
+**For a more complete example that includes record batches and tables see: [nickpoorman/go-py-arrow-bridge](https://github.com/nickpoorman/go-py-arrow-bridge)**
+
 ## Benchmark Results
 
 As you can see below, the amount of time to move data across the Python/Go language boundary stays constant as the amount of data is increased.
